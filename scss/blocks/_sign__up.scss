@@ -1,0 +1,175 @@
+.sign {
+    background-color: #495567;
+    padding-top: 102px;
+    padding-bottom: 102px;
+    position: relative;
+    
+    &::before {
+        content: url("./../images/social__round.svg");
+        position: absolute;
+        top: 47%;
+        left: 450px;
+    }
+    
+    &__container {
+        
+    }
+    
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+    &__wrapper-heading {
+        max-width: 415px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+    }
+    
+    &__wrapper-link {
+        display: flex;
+    }
+    
+    &__apple {
+        background-color: #E5ECF4;
+        border-radius: 4px;
+        position: relative;
+        max-width: 182px;
+        width: 100%;
+        padding: 9px 16px;
+        padding-left: 52px;
+        margin-right: 18px;
+        
+        &::before {
+            content: url("./../images/apple.svg");
+            position: absolute;
+            top: 25%;
+            left: 16px;
+        }
+        
+        &:active {
+            opacity: 0.5;
+        }
+    }
+    
+    &__apple-text {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.446429px;
+        color: #495567;
+    }
+    
+    &__apple-heading {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.892857px;
+        color: #495567;
+    }
+    
+    &__android {
+        background-color: #E5ECF4;
+        border-radius: 4px;
+        position: relative;
+        max-width: 182px;
+        width: 100%;
+        padding: 9px 16px;
+        padding-left: 52px;
+        margin-right: 18px;
+        
+        &::before {
+            content: url("./../images/apptore.svg");
+            position: absolute;
+            top: 25%;
+            left: 16px;
+        }
+        
+        &:active {
+            opacity: 0.5;
+        }
+        
+    }
+    
+    &__android-text {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.446429px;
+        color: #495567;
+    }
+    
+    
+    &__android-heading {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.892857px;
+        color: #495567;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .sign {
+        
+        
+        &__container {
+            
+        }
+        
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        
+        &__wrapper-heading {
+            max-width: 457px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .sign {
+        
+        
+        &__container {
+            
+        }
+        
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        
+        &__wrapper-heading {
+            max-width: 311px;
+            width: 100%;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+}

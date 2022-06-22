@@ -1,0 +1,385 @@
+.hero {
+    background-color: #F2F2F2;
+    margin-bottom: 130px;
+    
+    &__bg-container {
+        background-image: url("./../images/bg-img-moto.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    &__container {
+    }
+    
+    &__wrapper {
+        max-width: 500px;
+        width: 100%;
+        padding-top: 153px;
+        padding-bottom: 153px;
+    }
+    
+    &__heading {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+    
+    &__text {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+        margin-left: 95px;
+        position: relative;
+        
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 250px;
+            height: 16px;
+            background-color: $color-yellow;
+            position: absolute;
+            top: calc(50% - 8px);
+            right: calc(100% + 57px);
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 446px;
+            height: 157px;
+            position: absolute;
+            background-image: url("./../images/arrow.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            top: calc(50% - 8px);
+            left: calc(100% + 40px);
+        }
+    }
+    
+    &__link {
+        margin-left: 95px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: $color-white;
+        background-color: $color-yellow;
+        padding-top: 14px;
+        padding-right: 39px;
+        padding-bottom: 14px;
+        padding-left: 39px;
+        transition: 0.3s ease;
+
+        &:hover {
+            color: $color-yellow;
+            background-color: $color-white;
+            border: 4px solid $color-yellow;
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+  
+        
+        &__bg-container {
+        
+        }
+        
+        &__container {
+        }
+        
+        &__wrapper {
+            max-width: 713px;
+            width: 100%;
+            padding-top: 137px;
+            padding-bottom: 237px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 446px;
+                height: 157px;
+                position: absolute;
+                background-image: url("./../../images/arrow.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: calc(80% - 8px);
+                left: calc(+50% + -70%);
+            }
+        }
+        
+        &__heading {
+            font-size: 56px;
+            line-height: 56px;
+            margin-bottom: 24px;
+        }
+        
+        &__text {
+            margin-bottom: 32px;
+            margin-left: 0;
+            
+            &::before {
+                content: "";
+                display: none;
+                width: 250px;
+                height: 16px;
+                background-color: $color-yellow;
+                position: absolute;
+                top: calc(50% - 8px);
+                right: calc(100% + 57px);
+            }
+    
+            &::after {
+                content: "";
+                display: none;
+                width: 446px;
+                height: 157px;
+                position: absolute;
+                background-image: url("./../../images/arrow.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: calc(50% - 8px);
+                left: calc(100% + 40px);
+            }
+        }
+        
+        &__link {
+            margin-left: 0px;
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: $color-white;
+            background-color: $color-yellow;
+            padding-top: 14px;
+            padding-right: 39px;
+            padding-bottom: 14px;
+            padding-left: 39px;
+            transition: 0.3s ease;
+    
+            &:hover {
+                color: $color-yellow;
+                background-color: $color-white;
+                border: 4px solid $color-yellow;
+            }
+    
+    
+        }
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .hero {
+  
+        
+        &__bg-container {
+        
+        }
+        
+        &__container {
+        }
+        
+        &__wrapper {
+            max-width: 500px;
+            width: 100%;
+            padding-top: 137px;
+            padding-bottom: 237px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 446px;
+                height: 157px;
+                position: absolute;
+                background-image: url("./../../images/arrow.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: calc(110% - 8px);
+                left: calc(+50% + -138%);
+            }
+        }
+        
+        &__heading {
+            font-size: 50px;
+            line-height: 56px;
+            margin-bottom: 24px;
+        }
+        
+        &__text {
+            margin-bottom: 32px;
+            margin-left: 0;
+            
+            &::before {
+                content: "";
+                display: none;
+                width: 250px;
+                height: 16px;
+                background-color: $color-yellow;
+                position: absolute;
+                top: calc(50% - 8px);
+                right: calc(100% + 57px);
+            }
+    
+            &::after {
+                content: "";
+                display: none;
+                width: 446px;
+                height: 157px;
+                position: absolute;
+                background-image: url("./../../images/arrow.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: calc(50% - 8px);
+                left: calc(100% + 40px);
+            }
+        }
+        
+        &__link {
+            margin-left: 0px;
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: $color-white;
+            background-color: $color-yellow;
+            padding-top: 14px;
+            padding-right: 39px;
+            padding-bottom: 14px;
+            padding-left: 39px;
+            transition: 0.3s ease;
+    
+            &:hover {
+                color: $color-yellow;
+                background-color: $color-white;
+                border: 4px solid $color-yellow;
+            }
+    
+    
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .hero {
+  
+        
+        &__bg-container {
+        
+        }
+        
+        &__container {
+        }
+        
+        &__wrapper {
+            max-width: 375px;
+            width: 100%;
+            padding-top: 137px;
+            padding-bottom: 237px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 446px;
+                height: 157px;
+                position: absolute;
+                background-image: url("./../../images/arrow.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: calc(100% - 30px);
+                left: calc(+75% + -128%);
+            }
+        }
+        
+        &__heading {
+            font-size: 50px;
+            line-height: 56px;
+            margin-bottom: 24px;
+        }
+        
+        &__text {
+            margin-bottom: 32px;
+            margin-left: 0;
+            
+            &::before {
+                content: "";
+                display: none;
+                width: 250px;
+                height: 16px;
+                background-color: $color-yellow;
+                position: absolute;
+                top: calc(50% - 8px);
+                right: calc(100% + 57px);
+            }
+    
+            &::after {
+                content: "";
+                display: none;
+                width: 446px;
+                height: 157px;
+                position: absolute;
+                background-image: url("./../../images/arrow.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: calc(50% - 8px);
+                left: calc(100% + 40px);
+            }
+        }
+        
+        &__link {
+            margin-left: 0px;
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: $color-white;
+            background-color: $color-yellow;
+            padding-top: 14px;
+            padding-right: 39px;
+            padding-bottom: 14px;
+            padding-left: 39px;
+            transition: 0.3s ease;
+    
+            &:hover {
+                color: $color-yellow;
+                background-color: $color-white;
+                border: 4px solid $color-yellow;
+            }
+    
+    
+        }
+    }
+}
+

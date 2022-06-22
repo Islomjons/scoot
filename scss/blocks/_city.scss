@@ -1,0 +1,193 @@
+.city {
+    
+    &__list {
+    }
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        box-shadow: -500px 0 0 0 #E5ECF4;
+        border-radius: 50%;
+        margin-bottom: 226px;
+        
+        &:nth-child(2n) {
+            .city__wrapper {
+                order: -1;
+            }
+            box-shadow: 500px 0 0 0 #E5ECF4;
+        }
+        
+        &::before {
+            content: "";
+            display: inline-block;
+            background-image: url("./../../images/cross-opa-2.svg");
+            width: 734px;
+            height: 137px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            right: 530px;
+            
+        }
+    }
+    
+    &__img {
+        width: 445px;
+        height: 445px;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+    
+    &__wrapper {
+        max-width: 445px;
+        width: 100%;
+    }
+    
+    &__heading {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #495567;  
+        margin-bottom: 24px;
+    }
+    
+    &__text {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        margin-bottom: 40px;
+    }
+    
+    &__link {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: $color-yellow;
+        padding-top: 14px;
+        padding-right: 44px;
+        padding-bottom: 14px;
+        padding-left: 44px;
+        border: 4px solid $color-yellow;
+        transition: 0.3s ease;
+        
+        &:hover {
+            background-color: $color-white;
+            color: $color-yellow;
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .city {
+        
+        &__list {
+        }
+        
+        &__item {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            box-shadow: -500px 0 0 0 #E5ECF4;
+            border-radius: 50%;
+            margin-bottom: 226px;
+            
+            &:nth-child(2n) {
+                .city__wrapper {
+                    order: 0;
+                }
+                box-shadow: 500px 0 0 0 #E5ECF4;
+            }
+        }
+        
+        &__img {
+            width: 445px;
+            height: 445px;
+            object-fit: contain;
+            border-radius: 50%;
+            margin-bottom: 64px;
+        }
+        
+        &__wrapper {
+            max-width: 445px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        &__heading {
+            max-width: 457px;
+            width: 100%;
+            text-align: center;
+            font-family: 'Space Mono'; 
+            margin-bottom: 24px;
+        }
+        
+        &__text {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .city {
+        
+        &__list {
+        }
+        
+        &__item {
+            max-width: 311px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        &__img {
+            width: 311px;
+            height: 311px;
+            object-fit: contain;
+            border-radius: 50%;
+            margin-bottom: 64px;
+        }
+        
+        &__wrapper {
+            max-width: 445px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        &__heading {
+            max-width: 457px;
+            width: 100%;
+            text-align: center;
+            font-size: 32px;
+            line-height: 32px;
+            font-family: 'Space Mono'; 
+            margin-bottom: 32px;
+        }
+        
+        &__text {
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+    }
+}
